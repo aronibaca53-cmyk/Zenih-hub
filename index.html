@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Aron Blox Fruits Hub</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #ffcc00; font-size: 2.8em; }
+        .container { max-width: 1000px; margin: auto; }
+        .card { background: #1a1a1a; border-radius: 12px; padding: 18px; margin: 15px 0; border: 2px solid #ffcc00; }
+        button { background: #ffcc00; color: #000; padding: 14px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1em; width: 100%; margin-top: 8px; }
+        button:hover { background: #ffd633; transform: scale(1.03); }
+        .title { color: #ffcc00; margin: 0 0 10px 0; }
+        .note { font-size: 0.9em; color: #aaa; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Aron Blox Fruits Hub</h1>
+        <p style="text-align:center; color:#aaa;">Scripts para Blox Fruits - 2026</p>
+
+        <div class="card">
+            <h2 class="title">🕊️ Fly (Volar) - Con Toggle</h2>
+            <button onclick="installScript('https://aronibaca53-cmyk.github.io/Zenih-hub/scripts/fly.lua')">Activar / Desactivar Fly</button>
+            <p class="note">Presiona la tecla <strong>F</strong> para encender/apagar</p>
+        </div>
+
+        <div class="card">
+            <h2 class="title">📦 Hitbox Infinito INVISIBLE</h2>
+            <button onclick="installScript('https://aronibaca53-cmyk.github.io/Zenih-hub/scripts/hitbox-invisible.lua')">Activar Hitbox Invisible</button>
+        </div>
+
+        <div class="card">
+            <h2 class="title">🛡️ God Mode</h2>
+            <button onclick="installScript('https://aronibaca53-cmyk.github.io/Zenih-hub/scripts/god-mode.lua')">Activar God Mode</button>
+        </div>
+    </div>
+
+    <script>
+        function installScript(url) {
+            const code = `loadstring(game:HttpGet('${url}'))()`;
+            navigator.clipboard.writeText(code);
+            alert("✅ Código copiado!\nPégalo en tu executor");
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
