@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🚀 Aron Blox Fruits Hub</title>
+    <title>🚀 Zenith Hub</title>
     <style>
         body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; margin: 0; padding: 20px; }
         h1 { text-align: center; color: #ffcc00; font-size: 2.8em; }
@@ -17,31 +17,47 @@
 </head>
 <body>
     <div class="container">
-        <h1>🚀 Aron Blox Fruits Hub</h1>
+        <h1>🚀 Zenith Hub</h1>
         <p style="text-align:center; color:#aaa;">Scripts para Blox Fruits - 2026</p>
 
+        <!-- Fly -->
         <div class="card">
-            <h2 class="title">🕊️ Fly (Volar) - Con Toggle</h2>
+            <h2 class="title">🕊️ Fly (Volar)</h2>
             <button onclick="installScript('https://aronibaca53-cmyk.github.io/Zenih-hub/scripts/fly.lua')">Activar / Desactivar Fly</button>
-            <p class="note">Presiona la tecla <strong>F</strong> para encender/apagar</p>
+            <p class="note">Presiona <strong>F</strong> para volar</p>
         </div>
 
+        <!-- Hitbox -->
         <div class="card">
             <h2 class="title">📦 Hitbox Infinito INVISIBLE</h2>
             <button onclick="installScript('https://aronibaca53-cmyk.github.io/Zenih-hub/scripts/hitbox-invisible.lua')">Activar Hitbox Invisible</button>
         </div>
 
+        <!-- God Mode -->
         <div class="card">
             <h2 class="title">🛡️ God Mode</h2>
             <button onclick="installScript('https://aronibaca53-cmyk.github.io/Zenih-hub/scripts/god-mode.lua')">Activar God Mode</button>
         </div>
+
+        <!-- Fast Attack -->
+        <div class="card">
+            <h2 class="title">⚡ Fast Attack</h2>
+            <button onclick="installScript('https://aronibaca53-cmyk.github.io/Zenih-hub/scripts/fast-attack.lua')">Activar Fast Attack</button>
+        </div>
+
+        <!-- Insta Kill Void -->
+        <div class="card">
+            <h2 class="title">💀 Insta Kill Void</h2>
+            <button onclick="installScript('https://aronibaca53-cmyk.github.io/Zenih-hub/scripts/insta-kill-void.lua')">Activar Insta Kill Void</button>
+        </div>
+
     </div>
 
     <script>
         function installScript(url) {
             const code = `loadstring(game:HttpGet('${url}'))()`;
             navigator.clipboard.writeText(code);
-            alert("✅ Código copiado!\nPégalo en tu executor");
+            alert("✅ Código copiado al portapapeles!\nPégalo en tu executor");
             window.open(url, '_blank');
         }
     </script>
